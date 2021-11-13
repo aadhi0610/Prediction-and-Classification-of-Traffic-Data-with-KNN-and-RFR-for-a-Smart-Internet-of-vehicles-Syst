@@ -13,7 +13,7 @@ le=LabelEncoder() #create object
 y=le.fit_transform(y)#fit transform
 
 y = y.reshape(-1, 1)
-##from sklearn.compose import ColumnTransformer #import column transformer class from sklearn lib compose module
+##from sklearn.compose import ColumnTransformer #import column transformer class from sklearn lib compose modules
 from sklearn.preprocessing import OneHotEncoder#import one hot encoder func from sklearn lib pre-processing modulke
 one_hot_encoder = OneHotEncoder(categorical_features = [0])
 ##ct=ColumnTransformer(transformers=[('encoder',OneHotEncoder(),[0])],remainder='passthrough') #create object with arguments
